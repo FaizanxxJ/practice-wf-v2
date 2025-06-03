@@ -2,13 +2,13 @@ name : wf-ci
 on:
    pull_request:
       branches:
-          - develop
+          - main
       types:
           - opened
           - synchronize
    push:
        branches:
-          - develop 
+          - main
 jobs:
     linting-job:
        runs-on: ubuntu-latest
